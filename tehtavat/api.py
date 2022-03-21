@@ -11,6 +11,7 @@ class TehtavaSerializer(serializers.HyperlinkedModelSerializer):
 
 class TehtavaViewSet(viewsets.ModelViewSet):
     queryset = Tehtava.objects.all()
+    # queryset = Tehtava.objects.filter(id=1)
     serializer_class = TehtavaSerializer
 
 
